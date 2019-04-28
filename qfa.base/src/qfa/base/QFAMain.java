@@ -15,6 +15,8 @@ public class QFAMain {
 	}
 
 	private void initialize() {
+		System.out.println("Initializing...");
+		
 		initializeUI();
 	}
 	
