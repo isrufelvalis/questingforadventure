@@ -1,0 +1,30 @@
+<project name="build.properties" basedir=".">
+
+	<!-- Base Directory -->
+	<property name="base.dir" value="${basedir}" />
+	
+	<!-- Repository Locations -->
+	<property name="questingforadventure" value="${base.dir}/../../questingforadventure" />
+	
+	<!-- Project Locations -->
+	<property name="qfa.build" value="${questingforadventure}/qfa.build" />
+	
+	<property name="qfa.cots" value="${questingforadventure}/qfa.cots" />
+	
+	<property name="qfa.common" value="${questingforadventure}/qfa.common" />
+	<property name="qfa.base" value="${questingforadventure}/qfa.base" />
+	<property name="qfa.ui" value="${questingforadventure}/qfa.ui" />
+	
+	<property name="qfa.install" value="${questingforadventure}/qfa.install" />
+	
+	<!-- Default Classpath -->
+	<path id="default.classpath">
+		
+	</path>
+	
+	<!-- Compiler Properties -->
+	<property name="source" value="1.8" />
+	<property name="target" value="1.8" />
+	<property name="debug" value="true" />
+	<property name="includeantruntime" value="true" />
+</project>

@@ -1,0 +1,27 @@
+<project name="qfa.build" default="build" basedir=".">
+	
+	<property name="working.dir" value="${basedir}" />
+	<import file="${working.dir}/../qfa.build/build.properties.xml"/>
+	
+	<property name="bin" value="${qfa.base}/bin" />
+	<property name="src" value="${qfa.base}/src" />
+	<property name="lib" value="${qfa.base}/lib" />
+	
+	<path id="classpath">
+		<path refid="default.classpath" />
+	</path>
+	
+	<target name="clean">
+		<delete dir="${bin}" />
+		<delete dir="${lib}" />
+	</target>
+		
+	<target name="build">
+		<mkdir dir="${bin}" />
+		<mkdir dir="${lib}" />
+		
+		<javac srcdir="${src}" destdir="${bin}" classpathref="classpath" source="${source}" target="${target}" debug="${debug}" includeantruntime="${includeantruntime}" />		
+		
+		<jar basedir="${bin}" destfile="${lib}/${ant.project.name}.jar" />
+	</target>
+</project>

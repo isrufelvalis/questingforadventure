@@ -1,0 +1,16 @@
+<project name="qfa.build" default="build" basedir=".">
+	
+	<property name="working.dir" value="${basedir}" />
+	<import file="${working.dir}/build.properties.xml"/>
+	
+	<target name="clean">
+		<ant antfile="${qfa.base}/build.xml" target="clean" />
+	</target>
+		
+	<target name="build">
+		<ant antfile="${qfa.base}/build.xml" target="build" />
+	</target>
+	
+	<target name="install">
+	</target>
+</project>
