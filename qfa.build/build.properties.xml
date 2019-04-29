@@ -19,7 +19,9 @@
 	
 	<!-- Default Classpath -->
 	<path id="default.classpath">
-		
+		<fileset dir="${qfa.cots}/log4j/2.11.2">
+			<include name="**/*.jar" />
+		</fileset>
 	</path>
 	
 	<!-- Compiler Properties -->
